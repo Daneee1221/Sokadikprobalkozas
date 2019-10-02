@@ -17,6 +17,7 @@ namespace Feladat1
                 lista.Add(Convert.ToInt32(Console.ReadLine()));
             }
             Console.WriteLine("A legnagyobb szám: " + lista.Max());
+            Console.WriteLine("A legkisebb szám: " + lista.Min());
             Console.ReadKey();
         }
     }
