@@ -8,8 +8,10 @@ namespace Feladat1
     {
         static void Main(string[] args)
         {
-            List<int> lista = new List<int>(10);
-            for (int i = 0; i < 10; i++)
+            List<int> lista = new List<int>();
+            Console.WriteLine("Kérem adja meg a lista méretét: ");
+            int meret = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < meret; i++)
             {
                 Console.WriteLine("Adjon meg egy számot: ");
                 lista.Add(Convert.ToInt32(Console.ReadLine()));
