@@ -8,6 +8,8 @@ namespace Feladat1
     {
         static void Main(string[] args)
         {
+            try
+            {
             List<int> lista = new List<int>();
             Console.WriteLine("Kérem adja meg a lista méretét: ");
             int meret = Convert.ToInt32(Console.ReadLine());
@@ -18,6 +20,11 @@ namespace Feladat1
             }
             Console.WriteLine("A legnagyobb szám: " + lista.Max());
             Console.WriteLine("A legkisebb szám: " + lista.Min());
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Nem számot adott meg!");
+            }
             Console.ReadKey();
         }
     }
